@@ -1,0 +1,12 @@
+﻿body {
+    background-image: url('../Image/Customer_Home.jpg');
+    background-size: cover;
+}
+
+header {
+    border: thick;
+    padding: 10px;
+    text-align: center;
+    background-color: aqua;
+    font-size: 15px;
+}

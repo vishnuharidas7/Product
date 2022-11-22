@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GuestMaster.master.cs" Inherits="Product.Guest.GuestMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+                 <header>
+                 <div class="navigation">
+                <nav>
+                  <ul>
+                      <a href="Guest_Home.aspx"> Home</a>
+                   &nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="../Guest/Customer.aspx">Customer Registration</a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="../Guest/Customer_Login.aspx">Login</a>
+                      
+                  </ul>
+                </nav>
+              </div>
+            </header>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

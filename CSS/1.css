@@ -1,0 +1,10 @@
+﻿body {
+}
+
+header {
+    border: thick;
+    padding: 10px;
+    text-align: center;
+    background-color: aqua;
+    font-size: 15px;
+}

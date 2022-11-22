@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="Product.Admin.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                 <div class="navigation">
+                <nav>
+                  <ul>
+                      <a href="Admin_Home.aspx"> Home</a>
+                       &nbsp;&nbsp;&nbsp;
+                      <a href="../Admin/View_Product.aspx">Products</a>
+                       &nbsp;&nbsp;&nbsp;
+                      <a href="../Admin/Customer_confirmation.aspx">Customer Confirmation</a>
+                       &nbsp;&nbsp;&nbsp;
+                      <a href="../Admin/View_All_complaints.aspx">Customer Complaints</a>
+                       &nbsp;&nbsp;&nbsp;
+                      <a href="../Admin/View_All_query.aspx">Customer Queries</a>
+                       &nbsp;&nbsp;&nbsp;
+                      <a href="../Guest/Guest_Home.aspx">LogOut</a>
+                  
+                      
+                  </ul>
+                </nav>
+              </div>
+            </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

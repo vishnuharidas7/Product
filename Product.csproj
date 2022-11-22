@@ -1,0 +1,293 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8272C637-BF2C-4E7B-AD35-1D1372AC51F5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Product</RootNamespace>
+    <AssemblyName>Product</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44312</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Admin_Home.aspx" />
+    <Content Include="Admin\Customer_confirmation.aspx" />
+    <Content Include="Admin\Product_Registration.aspx" />
+    <Content Include="Admin\Reply_complaint.aspx" />
+    <Content Include="Admin\Reply_query.aspx" />
+    <Content Include="Admin\View_All_complaints.aspx" />
+    <Content Include="Admin\View_All_query.aspx" />
+    <Content Include="Admin\View_product.aspx" />
+    <Content Include="CSS\1.css" />
+    <Content Include="CSS\Admin_Home.css" />
+    <Content Include="CSS\Customer_Home.css" />
+    <Content Include="CSS\Guest_Home.css" />
+    <Content Include="Customer\Customer_Home.aspx" />
+    <Content Include="Customer\View_complaints.aspx" />
+    <Content Include="Customer\File_query.aspx" />
+    <Content Include="Customer\VIew_query.aspx" />
+    <Content Include="Customer\View_Register_Complaint.aspx" />
+    <Content Include="Guest\Customer.aspx" />
+    <Content Include="Guest\Customer_Login.aspx" />
+    <Content Include="Guest\Guest_Home.aspx" />
+    <Content Include="Image\GH.jpg" />
+    <Content Include="Image\jp.jpg" />
+    <Content Include="Image\Guest_Home.jpg" />
+    <Content Include="Image\Customer_Home.jpg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_Home.aspx.cs">
+      <DependentUpon>Admin_Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_Home.aspx.designer.cs">
+      <DependentUpon>Admin_Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Customer_confirmation.aspx.cs">
+      <DependentUpon>Customer_confirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Customer_confirmation.aspx.designer.cs">
+      <DependentUpon>Customer_confirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Product_Registration.aspx.cs">
+      <DependentUpon>Product_Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Product_Registration.aspx.designer.cs">
+      <DependentUpon>Product_Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reply_complaint.aspx.cs">
+      <DependentUpon>Reply_complaint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reply_complaint.aspx.designer.cs">
+      <DependentUpon>Reply_complaint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reply_query.aspx.cs">
+      <DependentUpon>Reply_query.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reply_query.aspx.designer.cs">
+      <DependentUpon>Reply_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\View_All_complaints.aspx.cs">
+      <DependentUpon>View_All_complaints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\View_All_complaints.aspx.designer.cs">
+      <DependentUpon>View_All_complaints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\View_All_query.aspx.cs">
+      <DependentUpon>View_All_query.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\View_All_query.aspx.designer.cs">
+      <DependentUpon>View_All_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\View_product.aspx.cs">
+      <DependentUpon>View_product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\View_product.aspx.designer.cs">
+      <DependentUpon>View_product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BAL\complaintBAL.cs" />
+    <Compile Include="BAL\confirmBAL.cs" />
+    <Compile Include="BAL\pdBAL.cs" />
+    <Compile Include="BAL\productBAL.cs" />
+    <Compile Include="BAL\queryBAL.cs" />
+    <Compile Include="Customer\CustomerMaster.Master.cs">
+      <DependentUpon>CustomerMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\CustomerMaster.Master.designer.cs">
+      <DependentUpon>CustomerMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Customer_Home.aspx.cs">
+      <DependentUpon>Customer_Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\Customer_Home.aspx.designer.cs">
+      <DependentUpon>Customer_Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\View_complaints.aspx.cs">
+      <DependentUpon>View_complaints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\View_complaints.aspx.designer.cs">
+      <DependentUpon>View_complaints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\File_query.aspx.cs">
+      <DependentUpon>File_query.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\File_query.aspx.designer.cs">
+      <DependentUpon>File_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\VIew_query.aspx.cs">
+      <DependentUpon>VIew_query.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\VIew_query.aspx.designer.cs">
+      <DependentUpon>VIew_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\View_Register_Complaint.aspx.cs">
+      <DependentUpon>View_Register_Complaint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\View_Register_Complaint.aspx.designer.cs">
+      <DependentUpon>View_Register_Complaint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\complaintDAL.cs" />
+    <Compile Include="DAL\confirmDAL.cs" />
+    <Compile Include="DAL\pdDAL.cs" />
+    <Compile Include="DAL\productDAL.cs" />
+    <Compile Include="DAL\queryDAL.cs" />
+    <Compile Include="Guest\Customer.aspx.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest\Customer.aspx.designer.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\Customer_Login.aspx.cs">
+      <DependentUpon>Customer_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest\Customer_Login.aspx.designer.cs">
+      <DependentUpon>Customer_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\GuestMaster.Master.cs">
+      <DependentUpon>GuestMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest\GuestMaster.Master.designer.cs">
+      <DependentUpon>GuestMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\Guest_Home.aspx.cs">
+      <DependentUpon>Guest_Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest\Guest_Home.aspx.designer.cs">
+      <DependentUpon>Guest_Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Guest\GuestMaster.Master" />
+    <Content Include="Customer\CustomerMaster.Master" />
+    <Content Include="Admin\AdminMaster.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49708</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44312/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
